@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scable=no">
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<!-- 置入文件 -->
+	<script src="bootstrap/js/jquery-3.2.1.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="swiper/js/swiper.js"></script>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/shopping_car.css">
+</head>
+<body>
+<!-- header -->
+<header id="header_wrapper">
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  	<div class="container">
+	    	<div class="header_box">
+	      		<div class="logo">
+	      			<a href="#"><img src="images/index/logo/mylogo.jpg" alt="logo"></a>
+	      		</div>
+		  		<nav class="navbar navbar-inverse" role="navigation">
+	  				<div class="navbar-header">
+	    				<button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+	    					<span class="sr-only"></span> 
+				        	<span class="icon-bar"></span> 
+				        	<span class="icon-bar"></span> 
+				        	<span class="icon-bar"></span> 
+	    				</button>
+	    			</div>
+	    			<div id="main-nav" class="collapse navbar-collapse navStyle">
+						<ul class="nav navbar-nav" id="mainNav">
+						  <li><a href="index.html" class="scroll-link">首页</a></li>
+						  <li><a href="reg.html" class="scroll-link">注册</a></li>			
+						  <li><a href="login.html" class="scroll-link a globalLoginBtn">登录</a></li>
+						  <li class="active"><a href="shopping_car.html" class="scroll-link">购物车</a></li>	
+						</ul>
+	  				</div>
+		 		</nav>
+	    	</div>
+	  	</div>
+	 </nav>
+</header>
+
+<section class="section">
+	<div class="title">我的购物车</div>
+	<div class="buycart">
+		<input class="checkbox" type="checkbox">
+		<img class="image img-responsive" src="images/tu1.png" alt="">
+		<div class="buy_box">
+			<div class="text">阿尔善风干牛肉香牛肉香牛肉香牛肉香牛肉香牛肉香辣味*250g 约14小袋</div>
+			<div class="money">￥50.00</div>
+			<div class="number">
+				<ul class="count">
+                    <li>
+	                	<span id="num-jian" class="num-jian">-</span>
+	                </li>
+	                <li>
+	                	<input type="text" class="input-num" id="input-num" value="1" />
+	                </li>
+	                <li>
+	                	<span id="num-jia" class="num-jia">+</span>
+	                </li>
+	            </ul>
+			</div>
+		</div>
+		<button class="btn btn-warning" type="button" ><a href="javascript:;">删除</a></button>
+	</div>
+		<div class="buycart">
+		<input class="checkbox" type="checkbox">
+		<img class="image img-responsive" src="images/tu1.png" alt="">
+		<div class="buy_box">
+			<div class="text">阿尔善风干牛肉香牛肉香牛肉香牛肉香牛肉香牛肉香辣味*250g 约14小袋</div>
+			<div class="money">￥50.00</div>
+			<div class="number">
+				<ul class="count">
+                    <li>
+	                	<span id="num-jian" class="num-jian">-</span>
+	                </li>
+	                <li>
+	                	<input type="text" class="input-num" id="input-num" value="1" />
+	                </li>
+	                <li>
+	                	<span id="num-jia" class="num-jia">+</span>
+	                </li>
+	            </ul>
+			</div>
+		</div>
+		<button class="btn btn-warning" type="button" ><a href="javascript:;">删除</a></button>
+	</div>
+	<!-- 计算 -->
+	<div class="row">
+			<div class="col-md-12 col-lg-12 col-sm-12">
+				<div class="">
+					<div class="pull-right">
+						<a href="success.html" type="button" class="btn btn-primary">去结算</a>
+					</div>
+					<div class="pull-right total">
+						<label>金额合计:<span  class="">100.00</span></label>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+
+<script>
+	var num_jia = document.getElementById("num-jia");
+	var num_jian = document.getElementById("num-jian");
+	var input_num = document.getElementById("input-num");
+
+	num_jia.onclick = function() {
+
+	    input_num.value = parseInt(input_num.value) + 1;
+	}
+
+	num_jian.onclick = function() {
+
+	    if(input_num.value <= 0) {
+	        input_num.value = 0;
+	    } else {
+
+	        input_num.value = parseInt(input_num.value) - 1;
+	    }
+
+	}
+</script>
+</body>
+</html>

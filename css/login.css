@@ -1,0 +1,170 @@
+	body{
+		background: #f5f5f5;
+	}
+	/*导航条*/
+#header_wrapper{
+    background:#fff;
+    padding: 20px 0px;
+   /* opacity: 0.5;*/
+}
+.header_box {
+    position: relative;
+}
+.logo {
+    float: left;
+    margin-top: 8px;
+	position: relative;
+	z-index: 2;
+}
+.logo>a>img{
+	width: 120px;
+    height: 40px;
+}
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;/*transparent透明*/
+}
+#nav-toggle{
+	background-color:#ddd;
+	border:none;
+}
+.navbar {
+    border: 0px solid #fff;
+    min-height: 60px;
+    margin-bottom: 0px;
+}
+.navStyle {
+    float: right;
+}
+.navStyle .ul {
+    list-style: none;
+    padding: 0px;
+}
+.navStyle .ul .li {
+    /*display: inline-block;*/
+    margin: 0 5px;
+}
+.navStyle .ul .li a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #222222;
+    font-weight:bold;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #df0031;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #df0031;
+    background-color: transparent;
+}
+	/*登录页面*/
+	.form-bg{
+		padding: 6em 0;
+	}
+	.form-horizontal{
+		background: #fff;
+		padding-bottom: 40px;
+		border-radius: 15px;
+		text-align: center;
+	}
+	.form-horizontal .heading{
+		display: block;
+		font-size: 35px;
+		font-weight: 700;
+		padding: 35px 0;
+		border-bottom: 1px solid #f0f0f0;
+		margin-bottom: 30px;
+	} 
+	@media(max-width: 1000px){
+	.form-horizontal .heading{
+		display: block;
+		font-size: 20px;
+		font-weight: 700;
+		padding: 35px 0;
+		border-bottom: 1px solid #f0f0f0;
+		margin-bottom: 30px;
+	}
+	}
+	.form-horizontal .form-group{
+		padding: 0 40px;
+		margin: 0 0 25px 0;
+		position: relative;
+	}
+	.form-horizontal .form-control{
+		background: #f0f0f0;
+		border: none;
+		border-radius: 20px;
+		box-shadow: none;
+		padding: 0 20px 0 45px;
+		height: 40px;
+		transition: all 0.3s ease 0s;
+	}
+	.form-horizontal .form-control:focus{
+		background: #e0e0e0;
+		box-shadow: none;
+		outline: 0 none;
+	}
+	.form-horizontal .form-group i{
+		position: absolute;
+		top: 12px;
+		left: 60px;
+		font-size: 17px;
+		color: #c8c8c8;
+		transition : all 0.5s ease 0s;
+	}
+	.form-horizontal .form-control:focus + i{
+		color: #00b4ef;
+	}
+	.form-horizontal .btn{
+		font-size: 14px;
+		color: #fff;
+		margin-top: 30px;
+		background: #00b4ef;
+		border-radius: 30px;
+		padding: 10px 125px;
+		border: none;
+		text-transform: capitalize;
+		transition: all 0.5s ease 0s;
+	}
+		@media(max-width: 1000px){
+			.form-horizontal .btn{
+				width: 200px;
+		font-size: 14px;
+		color: #fff;
+		margin-top: 30px;
+		background: #00b4ef;
+		border-radius: 30px;
+		padding: 10px 125px;
+		border: none;
+		text-transform: capitalize;
+		transition: all 0.5s ease 0s;
+	}
+	}
+	@media only screen and (max-width: 479px){
+		.form-horizontal .form-group{
+			padding: 0 25px;
+		}
+		.form-horizontal .form-group i{
+			left: 45px;
+		}
+		.form-horizontal .btn{
+			padding: 10px 20px;
+		}
+	}
+/*=================================================footer=================================================*/
+/*#footer{
+    margin-top: 6%;
+  text-align: center;
+  background: #fff;
+  height: 50px;
+}
+#footer-nav>a{
+  text-decoration: none;
+}
+#footer-nav>a,#footer-bottom>h5{
+  font-size: 12px;
+  color: #000;
+  line-height: 50px;
+}*/

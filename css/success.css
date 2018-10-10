@@ -1,0 +1,121 @@
+a ,
+a:link,
+a:hover,
+a:active,
+a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+/*导航条*/
+#header_wrapper{
+    background:#fff;
+    padding: 20px 0px;
+   /* opacity: 0.5;*/
+}
+.header_box {
+    position: relative;
+}
+.logo {
+    float: left;
+    margin-top: 8px;
+    position: relative;
+    z-index: 2;
+}
+.logo>a>img{
+    width: 120px;
+    height: 40px;
+}
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;/*transparent透明*/
+}
+#nav-toggle{
+    background-color:#ddd;
+    border:none;
+}
+.navbar {
+    border: 0px solid #fff;
+    min-height: 60px;
+    margin-bottom: 0px;
+}
+.navStyle {
+    float: right;
+}
+.navStyle .ul {
+    list-style: none;
+    padding: 0px;
+}
+.navStyle .ul .li {
+    margin: 0 5px;
+}
+.navStyle .ul .li a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #222222;
+    font-weight:bold;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #df0031;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #df0031;
+    background-color: transparent;
+}
+.success {
+    padding: 50px 0;
+}
+.success > img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+.success > .text {
+    font-size: 40px;
+    text-align:  center;
+    line-height: 2;
+    color: #666;
+}
+.btn {
+    display: block;
+}
+.btn > button{
+    width: 50%;
+    font-size: 36px;
+    padding: 15px 0;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+    @media(max-width: 768px){
+        .success > img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+.success > .text {
+    font-size: 20px;
+    text-align:  center;
+    line-height: 2;
+    color: #666;
+}
+.btn > button{
+    width: 50%;
+    font-size: 16px;
+    padding: 8px 0;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+    }
